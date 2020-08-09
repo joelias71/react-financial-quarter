@@ -23,7 +23,7 @@ export default function App() {
     return <h1>Loading ...</h1>
   } else {
     return (<div className="container">
-      <Table data={data} />
+      <Table data={data.getByMonth} />
     </div>)
   }
 }
