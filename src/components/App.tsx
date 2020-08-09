@@ -20,7 +20,7 @@ export default function App() {
   const { data } = useQuery(QUERY);
 
   if(!data) {
-    return <h1>Loading ...</h1>
+    return <h1 className="text-loading">Loading ...</h1>
   } else {
     return (<div className="container">
       <Table data={data.getByMonth} />

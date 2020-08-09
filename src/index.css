@@ -45,6 +45,11 @@ tr {
   background-color: var(--color-light-gray);
 }
 
+.text-loading {
+  text-align: center;
+  line-height: 100vh;
+}
+
 table tr:first-child {
   background-color: var(--color-gray);
   color: var(--color-dark-gray);
