@@ -11,7 +11,6 @@ export default function App() {
         interval
         revenue
       }
-      count
       total
     }
   }
