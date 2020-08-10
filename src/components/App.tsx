@@ -16,9 +16,10 @@ export default function App() {
   }
   `
 
-  const { data } = useQuery(QUERY);
+  const { error, data } = useQuery(QUERY);
 
   if(!data) {
+    if(error) return <h1 className="text-loading">Error loading the data</h1>
     return <h1 className="text-loading">Loading ...</h1>
   } else {
     return (<div className="container">
